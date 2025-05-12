@@ -1,0 +1,14 @@
+spring:
+    # disable consul
+  cloud:
+    consul:
+      enabled: false
+  datasource:
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    # dummy driver
+    url: jdbc:db://${DB_HOST}/examples
+  application:
+    name: ${APP_NAME}
+server:
+  port: ${APP_PORT}

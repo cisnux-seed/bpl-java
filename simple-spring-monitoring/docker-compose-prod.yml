@@ -1,0 +1,6 @@
+services:
+  simple-spring-monitoring:
+    environment:
+      PROFILE_MODE: "prod"
+    ports:
+      - "8082:8080"
